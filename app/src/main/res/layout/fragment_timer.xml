@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#F0F3FA"
+    android:padding="24dp"
+    >
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvStopWatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Stopwatch"
+        android:textColor="#425C81"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Stopwatch -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="240dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#B8C7E0">
+
+        <TextView
+            android:id="@+id/tvNumberStopWatch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="00:00.0"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="36sp"
+            android:textColor="#2D3E50" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnStartTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#425C81"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnStopTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#425C81"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnResetTimer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#425C81"/>
+
+</LinearLayout>

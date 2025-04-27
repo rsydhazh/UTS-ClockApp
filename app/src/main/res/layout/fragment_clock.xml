@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#F0F3FA"
+    android:paddingTop="48dp"
+    tools:context=".ClockFragment">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvClockTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Time"
+        android:textColor="#425C81"
+        android:textSize="30sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Analog Clock -->
+    <FrameLayout
+        android:id="@+id/clockContainer"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:background="@drawable/background_clock"
+        android:elevation="4dp"
+        android:layout_marginBottom="32dp">
+
+        <AnalogClock
+            android:id="@+id/analogClock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <!-- Digital Clock -->
+    <TextView
+        android:id="@+id/tvClockView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="34sp"
+        android:textColor="#425C81"
+        android:fontFamily="sans-serif-medium" />
+</LinearLayout>
